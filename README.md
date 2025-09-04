@@ -11,11 +11,11 @@ This application allows you to fine-tune Hugging Face models with custom dataset
 git clone https://github.com/shungyan/IPEX-LLM-Finetune-App.git
 cd IPEX-LLM-Finetune-App
 ```
-###2. Build the Docker Image
+### 2. Build the Docker Image
 ```bash
 docker build -t ipex-llm-finetuneapp -f ./Dockerfile .
 ```
-###3. Run the Docker Container
+### 3. Run the Docker Container
 ```bash
 docker run -itd \
   --net=host \
@@ -25,16 +25,16 @@ docker run -itd \
   --name=ipex-llm-finetuneapp \
   ipex-llm-finetuneapp
 ```
-###4. Enter the Container
+### 4. Enter the Container
 ```bash
 docker exec -it ipex-llm-finetuneapp bash
 ```
-###5. Start the Application
+### 5. Start the Application
 ```bash
 cd /app
 go run main.go
 ```
-6. Access the Web UI
+### 6. Access the Web UI
 
 Open your browser and navigate to:
 http://localhost:12345
